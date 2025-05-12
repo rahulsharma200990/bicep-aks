@@ -13,13 +13,13 @@
         "value": 1
       },
       "nodeVMSize": {
-        "value": "Standard_DS2_v2"
+        "value": "standard_a2m_v2"
       },
       "dnsPrefix": {
         "value": "aksdns"
       },
       "sshRSAPublicKey": {
-      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdummyplaceholderkey1234567890forAKSnodeaccess"
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIOUohKyO0fHlT+b6gy2iA8T1MXltDO3sKAFJ5V5zHVVRKBXAYnkSy5Z8tqlpcp7xvvfPmcuzdOePVt7xdjirkJbTbXLoYZowCw/Zq/9/7wxfCeTlJB6BXB1qrYlXZv1JLILi/XPUJZN8RdBWfeCvsVGxVMYimiz7p/c1RGXfVVBoHEJeFLfJKcxCQCpBOjG2yyBYRwXKiT7sNc+5GLdGuK4yCrGKhPHUtvaTk+CoB5EDf/gU/b2UajI5TypdgzEPYcBz26lgu/Ci2jRHekOP9UiQs9u08V38p7GniSrp/OZs7+Bnx+44gAK2rwc9ZYVHQ/SnKh8AZD9Oc+RhKeJJj rahulsharma@rahuls-MacBook-Air.local"
     },
     "linuxAdminUsername": {
       "value": "dummyuser"

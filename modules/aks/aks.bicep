@@ -30,14 +30,22 @@ param identityId string
 
 param subnetId string
 
+
+
+@description('The CIDR to use for Kubernetes services.')
+param serviceCidr string = '10.240.0.0/16'
+
+@description('The IP address within the service CIDR to assign to DNS.')
+param dnsServiceIP string = '10.240.0.10'
+
 resource aksCluster 'Microsoft.ContainerService/managedClusters@2025-02-01' = {
   name: clusterName
   location: location
   identity: {
     type: 'SystemAssigned'
-    userAssignedIdentities:{
-      '${identityId}':{}
-    }
+    // userAssignedIdentities:{
+    //   '${identityId}':{}
+    // }
   }
   properties: {
     dnsPrefix: dnsPrefix
@@ -63,6 +71,11 @@ resource aksCluster 'Microsoft.ContainerService/managedClusters@2025-02-01' = {
           }
         ]
       }
+    }
+    networkProfile: {
+      networkPlugin: 'azure'
+      serviceCidr: serviceCidr
+      dnsServiceIP: dnsServiceIP
     }
   }
 }
