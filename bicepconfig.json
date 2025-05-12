@@ -1,0 +1,14 @@
+{
+    "analyzers": {
+      "core": {
+        "verbose": false,
+        "enabled": true,
+        "rules": {
+          "no-unused-params": {
+            "level": "warning"
+          }
+        }
+      }
+    }
+  }
+  

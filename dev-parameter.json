@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      
+      "location": {
+      "value": "centralindia"
+      },
+      "aksClusterName": {
+        "value": "myAksCluster"
+      },
+      "nodeCount": {
+        "value": 1
+      },
+      "nodeVMSize": {
+        "value": "Standard_DS2_v2"
+      },
+      "dnsPrefix": {
+        "value": "aksdns"
+      },
+      "sshRSAPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdummyplaceholderkey1234567890forAKSnodeaccess"
+    },
+    "linuxAdminUsername": {
+      "value": "dummyuser"
+    },
+    "osDiskSizeGB":{
+      "value": 100
+    }
+    }
+  }
